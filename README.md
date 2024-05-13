@@ -9,25 +9,30 @@ Badges: <BR><BR>
 [![GeoSMART Use Case](./book/img/use_case_badge.svg)](https://geo-smart.github.io/usecases)
 
 
-How this repository was initiated from the 'simple' skeleton use case book at the Geo-Smart organization.<br>
+I advocate for documenting process. Here is how the Geo-Smart organization 'simple skeleton' source repository was used to create a Jupyter Book version of my oceanography work.<br>
 
-- I knew there were two templates: A simple one (in use here) and a more comprehensive version
-    - The website to view these and existing books is [here](https://geo-smart.github.io/usecases).
-- Clicked "Use This Template"; named the new repository (appearing in my personal organization) **`oceanography`**
-    - Made sure to click on 'include all branches'
-    - I have an existing repository **`ocean`**: Will be the basis of this Jupyter book
-        - I am starting with a blank slate here
-- Started editing this `README.md` to trace my steps
-- Notice that instructions include **edit `environment.yml`**... how to create this file?
-    - Read up on Python and environments
-    - Install the `conda` package manager
-        - I use `miniconda`
-        - I then install packages / libraries as needed
-    - From a working (*activated*) environment I run: `conda env export > environment.yml`
-        - There is a corresponding path using `pip freeze` that produces the analogous `requirements.txt` file
-        - The `yml` approach seems to be more recent / flexible (also accommodates requirements-style) 
+
+- I knew there were two templates available: The simple one (in use here) and a more comprehensive version
+    - The website to view these (plus existing books) is [here](https://geo-smart.github.io/usecases).
+- From the simple template I followed the 4-step directions...
+    - Clicked "Use This Template"; named the new repository (appearing in my personal organization) **`oceanography`**
+        - Made sure to click on 'include all branches'
+        - I have an existing repository **`ocean`**: Will be the basis of this Jupyter book
+            - I am starting with a blank slate here
+    - Started editing this `README.md` to trace my steps
+    - Edited `book/_config.yml` file to reflect this fork to `my-org/oceanography`
+        - Presumably this will get bounced back over to the geo-smart org: For a later day
+    - Notice that instructions include **edit `environment.yml`**... how to create this file?
+        - Read up on Python and environments
+        - Install the `conda` package manager
+            - I use `miniconda`
+            - I then install packages / libraries as needed
+        - From a working (*activated*) environment I run: `conda env export > environment.yml`
+            - There is a corresponding path using `pip freeze` that produces the analogous `requirements.txt` file
+            - The `yml` approach seems to be more recent / flexible (also accommodates requirements-style) 
+
+
 Remaining instructions: 
 
-2. In your repository edit book/_config.yml
 3. Under your repository Settings --> Pages --> Source = GitHub Actions
 4. Edit environment.yml, modify notebooks, and your JupyterBook will be published for you! 

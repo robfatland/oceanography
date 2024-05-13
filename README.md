@@ -16,7 +16,7 @@ I advocate for documenting process. Here is how the Geo-Smart organization 'simp
     - The website to view these (plus existing books) is [here](https://geo-smart.github.io/usecases).
 - From the simple template I followed the directions (4 steps) in the README
     - (1) Clicked "Use This Template"; named the new repository (appearing in my personal organization) **`oceanography`**
-        - Made sure to click on 'include all branches'
+        - Forked main branch only (the default checked option)
         - I have an existing repository **`ocean`**: Will be the basis of this Jupyter book
             - I am starting with a blank slate here
     - Started editing this `README.md` to trace my steps
@@ -25,6 +25,13 @@ I advocate for documenting process. Here is how the Geo-Smart organization 'simp
     - (3) Settings --> Pages --> Source = GitHub Actions
         - To do (?): Enable github pages
     - (4) Edit `environment.yml` to establish a working environment
+        - The pre-existing `environment.yml` contains what is needed to build the Jupyter Book
+            - Therefore do not clobber its contents!
+            - Rather: Plan to merge other content into this file...
+                - ...but only after successfully building a prototype Book
+                - How is this done?
+                    - At the top left of the GitHub console is a sequence of tabs: Code, Issues, Pull requests, Actions, ..., Settings
+                    - Up above I went to Settings and enabled Github Actions
         - How to create a proper **`environment.yml`**?
             - Read up on Python and environments
             - Install the `conda` package manager

@@ -22,6 +22,8 @@ I advocate for documenting process. Here is how the Geo-Smart organization 'simp
     - Started editing this `README.md` to trace my steps
     - Edited `book/_config.yml` file to reflect this fork to `my-org/oceanography`
         - Presumably this will get bounced back over to the geo-smart org: For a later day
+    - Settings --> Pages --> Source = GitHub Actions
+        - To do (?): Enable github pages
     - Notice that instructions include **edit `environment.yml`**... how to create this file?
         - Read up on Python and environments
         - Install the `conda` package manager
@@ -34,5 +36,10 @@ I advocate for documenting process. Here is how the Geo-Smart organization 'simp
 
 Remaining instructions: 
 
-3. Under your repository Settings --> Pages --> Source = GitHub Actions
-4. Edit environment.yml, modify notebooks, and your JupyterBook will be published for you! 
+- Edit environment.yml, modify notebooks, and your JupyterBook will be published for you! 
+- edit conda/environment.yml, filling it in with your dependencies (don't worry about the platforms section, in fact you may delete that)
+- in the book/chapters folder, add the full, runnable jupyter notebook
+- in the book/chapters folder, add split up versions of the notebook however you'd like to split up chapters
+- add the file paths for the chapters from the step above to book/_toc.yml (if you followed the same naming scheme of one, two, three etc. then you just have to delete any excess entries in the TOC)
+- in the github repository, enable github pages
+- push all changes

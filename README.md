@@ -32,16 +32,11 @@ I advocate for documenting process. Here is how the Geo-Smart organization 'simp
                 - I then install packages / libraries as needed
             - From a working (*activated*) environment: `conda env export > environment.yml`
                 - Analogous: `pip freeze` produces `requirements.txt`
-                - 
+
 
 ### Remaining instructions / question
 
-- modify notebooks
-- Jupyter Book will "auto-publish" 
-- Don't worry about the platforms section
-- in the book/chapters folder, add the full, runnable jupyter notebook
-- in the book/chapters folder, add split up versions of the notebook however you'd like to split up chapters
-- add the file paths for the chapters from the step above to book/_toc.yml (if you followed the same naming scheme of one, two, three etc. then you just have to delete any excess entries in the TOC)
+- Jupyter notebooks go in the books/chapters folder: One notebook per chapter; add chapter file paths to book/_toc.yml
 - in the github repository, enable github pages
 - push all changes
 

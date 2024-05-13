@@ -14,32 +14,34 @@ I advocate for documenting process. Here is how the Geo-Smart organization 'simp
 
 - I knew there were two templates available: The simple one (in use here) and a more comprehensive version
     - The website to view these (plus existing books) is [here](https://geo-smart.github.io/usecases).
-- From the simple template I followed the 4-step directions...
-    - Clicked "Use This Template"; named the new repository (appearing in my personal organization) **`oceanography`**
+- From the simple template I followed the directions (4 steps) in the README
+    - (1) Clicked "Use This Template"; named the new repository (appearing in my personal organization) **`oceanography`**
         - Made sure to click on 'include all branches'
         - I have an existing repository **`ocean`**: Will be the basis of this Jupyter book
             - I am starting with a blank slate here
     - Started editing this `README.md` to trace my steps
-    - Edited `book/_config.yml` file to reflect this fork to `my-org/oceanography`
+    - (2) Edited `book/_config.yml` file to reflect this fork to `my-org/oceanography`
         - Presumably this will get bounced back over to the geo-smart org: For a later day
-    - Settings --> Pages --> Source = GitHub Actions
+    - (3) Settings --> Pages --> Source = GitHub Actions
         - To do (?): Enable github pages
-    - Notice that instructions include **edit `environment.yml`**... how to create this file?
-        - Read up on Python and environments
-        - Install the `conda` package manager
-            - I use `miniconda`
-            - I then install packages / libraries as needed
-        - From a working (*activated*) environment I run: `conda env export > environment.yml`
-            - There is a corresponding path using `pip freeze` that produces the analogous `requirements.txt` file
-            - The `yml` approach seems to be more recent / flexible (also accommodates requirements-style) 
+    - (4) Edit `environment.yml` to establish a working environment
+        - How to create a proper **`environment.yml`**?
+            - Read up on Python and environments
+            - Install the `conda` package manager
+                - I use `miniconda`
+                - I then install packages / libraries as needed
+            - From a working (*activated*) environment: `conda env export > environment.yml`
+                - Analogous: `pip freeze` produces `requirements.txt`
+                - 
 
+### Remaining instructions / question
 
-Remaining instructions: 
-
-- Edit environment.yml, modify notebooks, and your JupyterBook will be published for you! 
-- edit conda/environment.yml, filling it in with your dependencies (don't worry about the platforms section, in fact you may delete that)
+- modify notebooks
+- Jupyter Book will "auto-publish" 
+- Don't worry about the platforms section
 - in the book/chapters folder, add the full, runnable jupyter notebook
 - in the book/chapters folder, add split up versions of the notebook however you'd like to split up chapters
 - add the file paths for the chapters from the step above to book/_toc.yml (if you followed the same naming scheme of one, two, three etc. then you just have to delete any excess entries in the TOC)
 - in the github repository, enable github pages
 - push all changes
+

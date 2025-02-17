@@ -9,7 +9,8 @@ Badges: <BR><BR>
 [![GeoSMART Use Case](./book/img/use_case_badge.svg)](https://geo-smart.github.io/usecases)
 
 
-I advocate for documenting process. Here is how the Geo-Smart organization 'simple skeleton' source repository was used to create a Jupyter Book version of my oceanography work.<br>
+I am a fan of documentation. Here is how the Geo-Smart organization 'simple skeleton' source repository 
+was used to create a Jupyter Book version of my oceanography work.<br>
 
 
 - I knew there were two templates available: The simple one (in use here) and a more comprehensive version

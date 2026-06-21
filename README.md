@@ -1,4 +1,30 @@
-# Geosmart Use Case Jupyter Book
+# oceanography
+
+Catch-all archive for legacy ocean science repositories, consolidated June 2026.
+The active working repo for this domain is [argosy](https://github.com/robfatland/argosy).
+
+## Structure
+
+- `book/` — Original GeoSMART Jupyter Book (oceanography use case)
+- `whales/` — Humpback whale broadband hydrophone recording, spectrogram, and detection notebook
+- `archive/` — Preserved legacy material
+  - `das.md` — Distributed Acoustic Sensing notes and references
+  - `source/` — Notebooks from the `ocean` repo: seismology, Axial inflation, biooptics, ARGO, MODIS, carbonate chemistry, spectrophotometer, gliders, GLODAP, profiler comparisons
+
+## Provenance
+
+This repo consolidates content from the following (now deleted) repositories:
+- `ocean` — OOI shallow profiler data and notebooks
+- `notebooks` — Dev notebooks including whale detection work
+- `galleryclone` — Gallery/binder notebooks with whale audio
+- `epipelargosy` — Earlier geo-smart Jupyter Book draft (fully superseded by argosy)
+- `sensors` — OOI sensor data store and BioOptics work
+- `detritus` — Miscellaneous notes
+- `chlorophyll` — Empty repo
+
+---
+
+# Original README: Geosmart Use Case Jupyter Book
 
 Badges: <BR><BR>
 
